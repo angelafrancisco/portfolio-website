@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+/* NAVIGATION */
+.nav-header {
+    border-bottom: 1px solid #eee;
+    height: 4rem;
+    z-index: 1;
+}
+.nav-control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.nav-menu-control {
+    margin: 25px;
+}
+
+/* MENU */
+.menu-aside {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px 30px;
+    transition: 0.5s ease-in-out;
+    transform: translateX(100%);
+    z-index: 2;
+}
+.menu-aside-open {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.menu-link {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* MAIN SECTION */
+main {
+    background: rgba(0, 0, 0, 0.5) url('/Users/angelafrancisco/Documents/General-Assembly/Projects/1-Portfolio-website/images/makenzie-cooper-VDrR8Wr5lEk-unsplash.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* PHOTO CREDIT FROM UNSPLASH */
+#photo-credit, #photo-credit a {
+    font-size: 0.5rem;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.icon-img {
+    margin: 10px;
+}
+a {
+    color: white;
+}
