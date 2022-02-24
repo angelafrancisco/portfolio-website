@@ -45,7 +45,7 @@ body {
 
 /* MAIN SECTION */
 main {
-    background: rgba(0, 0, 0, 0.5) url('/Users/angelafrancisco/Documents/General-Assembly/Projects/portfolio-website/images/makenzie-cooper-VDrR8Wr5lEk-unsplash.jpg');
+    background: rgba(0, 0, 0, 0.5) url('../images/makenzie-cooper-VDrR8Wr5lEk-unsplash.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
