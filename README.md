@@ -1,9 +1,12 @@
 # Personal Portfolio Website
 **February 2022. My first individual project for General Assembly.**
+
 A personal website displaying my projects and who I am as a Software Engineer.
 
 ## Website Link
-<!-- website link here -->
+Hosted on Netlify:
+
+https://angelafrancisco.netlify.app/
 
 ## Technology Used
 - HTML
