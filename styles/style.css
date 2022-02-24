@@ -1,13 +1,46 @@
 body {
-    background-color: black;
+    background-color: rgb(170, 250, 255);
     color: white;
     margin: 0;
 }
+/* LINKS */
+a {
+    color: white;
+    text-decoration: none;
+}
+/* FLEXBOX */
+.nav-header,
+.nav-link-list,
+.home-section,
+.icons-container {
+    display: flex;
+}
 
-/* NAVIGATION */
+/* NAVIGATION HEADER SECTION */
 .nav-header {
-    border-bottom: 1px solid #eee;
-    height: 4rem;
+    background-color: rgb(120, 220, 230);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.nav-container.left {
+    cursor: pointer;
+}
+.nav-link-list {
+    justify-content: center;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+.nav-menu-link {
+    margin: 10px;
+    cursor: pointer;
+}
+.AF-home-link {
+    margin: 10px;
+}
+/* this was for the original hamburger nav */
+/* .nav-header {
     z-index: 1;
 }
 .nav-control {
@@ -18,9 +51,7 @@ body {
 }
 .nav-menu-control {
     margin: 25px;
-}
-
-/* MENU */
+} 
 .menu-aside {
     background-color: rgb(0, 0, 0);
     position: fixed;
@@ -42,43 +73,28 @@ body {
     display: block;
     margin: 10px auto;
 }
+*/
 
-/* MAIN SECTION */
-main {
-    background: rgba(0, 0, 0, 0.5) url('../images/makenzie-cooper-VDrR8Wr5lEk-unsplash.jpg');
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    width: 100%;
-    height: 500px;
-    display: flex;
+/* PAGE SECTION */
+.home-section, 
+.about-section, 
+.project-section,
+.contact-section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.welcome-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-/* PHOTO CREDIT FROM UNSPLASH */
-#photo-credit, #photo-credit a {
-    font-size: 0.5rem;
-    color: white;
 }
 
 /* FOOTER */
 footer {
-    background-color: black;
+    background-color: rgb(120, 220, 230);
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
+    border-top: 1px solid rgb(230, 230, 230);
 }
 .icons-container {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -86,7 +102,5 @@ footer {
 }
 .icon-img {
     margin: 10px;
-}
-a {
-    color: white;
+    cursor: pointer;
 }
