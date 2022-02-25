@@ -19,7 +19,7 @@ a {
 /* FLEXBOX */
 .nav-header,
 .nav-hamburger-container,
-.home-section,
+.main-section,
 .icons-container {
     display: flex;
 }
@@ -95,10 +95,7 @@ a {
     transform: rotate(45deg) translate(-5px, -9px);
 }
 /* PAGE SECTION */
-.home-section, 
-.about-section, 
-.project-section,
-.contact-section {
+.main-section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
