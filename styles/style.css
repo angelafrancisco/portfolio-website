@@ -34,11 +34,11 @@ a {
     z-index: 1;
     /* how can I stack the elements with first 2 in row, then stack right div child 2 underneath? */
 }
-@media (min-width: 480px){
-    .nav-header {
+/* @media (min-width: 480px){ */
+    /* .nav-header { */
         /* regular styling here */
-    }
-}
+    /* } */
+/* } */
 .nav-container.left {
     cursor: pointer;
     border: 2px solid #000000;
@@ -63,11 +63,13 @@ a {
     margin: 10px;
     cursor: pointer;
 }
+/* MOBILE HAMBURGER MENU */
 .nav-hamburger-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 20px;
+    cursor: pointer;
 }
 @media (min-width: 480px) {
     .nav-hamburger-container {
@@ -79,13 +81,19 @@ a {
     height: 4px;
     background-color: #000000;
     margin: 3px 0px;
-}
-@media (min-width: 480px) {
-    .nav-hamburger {
-        display: none;
-    }
+    transition: 0.5s;
 }
 
+/* HAMBURGER ANIMATION ON CLICK */
+.move.bar1 {
+    transform: rotate(-45deg) translate(-5px, 9px);
+}
+.move.bar2 {
+    opacity: 0;
+}
+.move.bar3 {
+    transform: rotate(45deg) translate(-5px, -9px);
+}
 /* PAGE SECTION */
 .home-section, 
 .about-section, 
