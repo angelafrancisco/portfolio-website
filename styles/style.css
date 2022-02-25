@@ -51,12 +51,15 @@ a {
 .nav-link-list {
     display: none;
     margin: 10px;
+    list-style-type: none;
+}
+.open {
+    display: block;
 }
 @media (min-width: 480px) {
     .nav-link-list {
         display: flex;
         justify-content: center;
-        list-style-type: none;
     }
 }
 .nav-menu-link {
