@@ -3,17 +3,18 @@ console.log(`I AM LINKED`);
 // JQUERY SCRIPT //
 $(() => {
     //  action: user clicks menu icon (hamburger)
-    $('.nav-control').click(() => {
-        //  add new class to menu-aside
-        $('.menu-aside').addClass('menu-aside-open');
+    $('.nav-hamburger-container').click(() => {
+        //  add new class to nav
+        $('.nav-link-list').addClass('menu-open');
         console.log(`MENU WAS CLICKED`);
+        // hide or swap? hamburger for X
+
     });
-    //  action: user clicks the 'close-menu' x
-    $('#menu-aside-close').click(() => {
-        //  remove 'menu-aside-open' class
-        $('.menu-aside').removeClass('menu-aside-open');
+    //  action: user clicks the X to close menu
+    $('.menu-close').click(() => {
+        //  remove 'menu-open' class
+        $('.nav-link-list').removeClass('menu-open');
         console.log(`MENU HAS CLOSED`);
     });
-
 
 });
