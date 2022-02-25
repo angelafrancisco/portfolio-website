@@ -32,13 +32,13 @@ a {
     align-items: center;
     border-bottom: 1px solid #88ced3;
     z-index: 1;
-    /* how can I stack the elements with first 2 in row, then stack right div child 2 underneath? */
+    flex-wrap: wrap;
 }
-/* @media (min-width: 480px){ */
-    /* .nav-header { */
-        /* regular styling here */
-    /* } */
-/* } */
+@media (min-width: 480px) {
+    .nav-header {
+        flex-wrap: nowrap;
+    }
+}
 .nav-container.left {
     cursor: pointer;
     border: 2px solid #000000;
@@ -55,6 +55,9 @@ a {
 }
 .open {
     display: block;
+}
+.menu-block {
+    width: 100%;
 }
 @media (min-width: 480px) {
     .nav-link-list {
