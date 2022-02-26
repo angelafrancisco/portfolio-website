@@ -15,7 +15,7 @@ $(() => {
             // move to right container
             $('.nav-link-list').appendTo('.nav-container.right');
             // remove div element
-            $('.nav-header').remove('div.menu-block');
+            $('div.menu-block').remove();
         } else {
             // if false, add class .open
             $('.nav-link-list').addClass('open');
