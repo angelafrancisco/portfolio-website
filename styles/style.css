@@ -12,6 +12,7 @@ body {
 a {
     color: #000000;
     text-decoration: none;
+    cursor: pointer;
 }
 /* NAVIGATION HEADER SECTION */
 .nav-header {
@@ -106,6 +107,35 @@ a {
         margin: 0 auto;
     }
 }
+/* CONTENT */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 480px) {
+    .content-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+.content-box {
+    margin: 10px;
+    padding: 10px;
+    border: 2px dashed black;
+}
+@media (min-width: 480px) {
+    .content-box {
+        height: 280px;
+        width: 440px;
+    }
+}
+.content-text {
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+}
 /* FOOTER */
 footer {
     background-color: #aafaff;
@@ -131,7 +161,7 @@ footer {
     margin: 0;
     padding: 10px;
 }
-/* ==================== PAGE CONTENT ==================== */
+/* ==================== SPECIFIC PAGE CONTENT ==================== */
 /* HOME PAGE */
 .heading-text, .sub-heading {
     text-align: center;
@@ -146,27 +176,43 @@ footer {
     }
 }
 /* ABOUT PAGE */
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-@media (min-width: 480px) {
-    .content-container {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-}
 .img-box {
     margin: 10px;
     border-radius: 5%;
 }
-.content-box {
-    margin: 0px 20px 20px 20px;
+/* RESUME PAGE */
+.resume-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
-.content-text {
+@media (min-width: 480px){
+    .resume-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+    }
+}
+.resume-box {
     padding: 10px;
-    margin: 0;
+    border: 2px dashed black;
+}
+.resume-box.first {
+    margin: 0px 10px;
+}
+.resume-box.small {
+    margin: 0px 10px 20px 10px;
+}
+.resume-box-title, .job-title, .job-info {
+    margin-top: 0px;
+}
+.job-title, .job-info {
+    margin-bottom: 0px;
+}
+.job-title {
+    font-weight: 700;
+}
+.job-info {
+    font-style: italic;
 }
 /* PROJECT PAGE */
 .grid-container {
