@@ -41,12 +41,16 @@ $(() => {
         }
     });
     // 3. for each project div, hover over img and display hidden modal //
-    $('.grid-box').hover(function () {
-        // add new class to div after hover
-        $(this).last().addClass('show');
-    }, function () {
-        $(this).last().removeClass('show');
+    $('.grid-box').each(function () {
+        $(this).hover(function () {
+            console.log($(this));
+            // add/remove new class to div on each hover
+            $(this).find('.grid-modal').addClass('show');
+        }, function () {
+            $(this).find('.grid-modal').removeClass('show');
+        });
     });
+
 
 
 });
