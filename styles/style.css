@@ -37,7 +37,6 @@ a {
 .AF-home-link {
     margin: 5px;
 }
-/* MOBILE MENU */
 .nav-link-list {
     display: none;
     margin: 10px;
@@ -49,6 +48,11 @@ a {
         display: flex;
         justify-content: center;
     }
+}
+.nav-menu-link a:hover, .nav-menu-link.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
 }
 .open {
     display: block;
@@ -234,3 +238,12 @@ footer {
 /* .grid-modal:hover {
 
 } */
+/* CONTACT PAGE */
+span {
+    font-weight: 700;
+}
+.content-text a {
+    font-style: italic;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 0;
+}

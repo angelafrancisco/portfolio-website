@@ -1,10 +1,9 @@
-console.log(`I AM LINKED`);
-
+// console.log(`I AM LINKED`);
 // JQUERY SCRIPT //
 $(() => {
-    //  on mobile, user clicks hamburger
+    //  1. mobile hamburger click animation, menu open
     $('.nav-hamburger-container').click(() => {
-        console.log(`MENU IS CLICKED`);
+        // console.log(`MENU IS CLICKED`);
         // animation on hamburger divs into X
         $('.nav-hamburger').toggleClass('move');
         // check element for .open class
@@ -25,5 +24,21 @@ $(() => {
             $('.nav-link-list').appendTo('.menu-block');
         }
     });
+    // 2. set link border-bottom on current page
+    // create array for all pages
+    const $pagesArray = window.location.pathname.split("/");
+    // console.log($pagesArray)
+    // variable for finding current page from last item in pagesArray
+    const $currentPage = $pagesArray[$pagesArray.length - 1];
+    // console.log($currentPage)
+    // create array for nav links
+    $('.nav-menu-link').each(function () {
+        console.log(this.id);
+        if ($currentPage === this.id) {
+            $(this).addClass('active');
+        }
+    });
 
+
+    // 3.
 });
