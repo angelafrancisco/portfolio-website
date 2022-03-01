@@ -26,7 +26,7 @@ $(() => {
     });
     // 2. on current page, show a border-bottom on active link //
     // this code ended up much shorter than my original attempts as I was using each to target the wrong element
-    // create array for nav links
+    // use each to go through each li (aim is to match id to pathname)
     $('.nav-menu-link').each(function () {
         // console.log(this.id);
         // create array for all pages
@@ -40,9 +40,13 @@ $(() => {
             $(this).addClass('active');
         }
     });
-    // 3. for each project, hover over img and display hidden modal //
+    // 3. for each project div, hover over img and display hidden modal //
+    $('.grid-box').hover(function () {
+        // add new class to div after hover
+        $(this).last().addClass('show');
+    }, function () {
+        $(this).last().removeClass('show');
+    });
 
-    // add new class to div after hover
-    $('.grid-modal').addClass('show');
 
 });
