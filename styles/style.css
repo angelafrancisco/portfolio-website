@@ -49,10 +49,12 @@ a {
         justify-content: center;
     }
 }
-.nav-menu-link a:hover, .nav-menu-link.active {
-    color: #000000;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 5px;
+@media (min-width: 480px){
+    .nav-menu-link a:hover, .nav-menu-link.active {
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        padding-bottom: 5px;
+    }
 }
 .open {
     display: block;
@@ -96,7 +98,7 @@ a {
 .move.bar3 {
     transform: rotate(45deg) translate(-5px, -9px);
 }
-/* MAIN CONTENT */
+/* MAIN */
 .main-section {
     display: flex;
     flex-direction: column;
@@ -111,7 +113,11 @@ a {
         margin: 0 auto;
     }
 }
-/* CONTENT - ABOUT/CONTACT */
+/* SECTION */
+section {
+    padding-bottom: 20px;
+}
+/* ABOUT/CONTACT */
 .content-container {
     display: flex;
     flex-direction: column;
@@ -233,15 +239,54 @@ footer {
 .grid-img {
     width: 100%;
     border-radius: 5%;
-}
-.grid-box, .grid-img {
     overflow: hidden;
+}
+.grid-box{
+    overflow: hidden;
+    position: relative;
+}
+.grid-img:hover {
+    filter: blur(6px);
 }
 .grid-modal {
     display: none;
+    position: absolute;
+    top: 55px;
+    left: 55px;
 }
-.grid-box:hover {
-    filter: blur(6px);
+.grid-modal h3, p {
+    margin: 5px;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 5%;
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+    font-size: 0.8rem;
+}
+.buttons-container {
+    display: inline;
+    margin: 10px 0px;
+}
+.button-link {
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 2px 20px;
+    margin: 0px 5px;
+}
+.button-link:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
 }
 /* CONTACT PAGE */
 span {

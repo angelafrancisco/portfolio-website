@@ -25,6 +25,7 @@ $(() => {
         }
     });
     // 2. on current page, show a border-bottom on active link //
+    // this code ended up much shorter than my original attempts as I was using each to target the wrong element
     // create array for nav links
     $('.nav-menu-link').each(function () {
         // console.log(this.id);
@@ -35,10 +36,13 @@ $(() => {
         const $currentPage = $pagesArray[$pagesArray.length - 1];
         // console.log($currentPage)
         if ($currentPage === this.id) {
+            // add new class to current page
             $(this).addClass('active');
         }
     });
-    // 3. for each project img, hover and display hidden modal //
-    // 
+    // 3. for each project, hover over img and display hidden modal //
+
+    // add new class to div after hover
+    $('.grid-modal').addClass('show');
 
 });
