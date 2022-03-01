@@ -172,13 +172,17 @@ footer {
     padding: 10px;
 }
 /* ==================== SPECIFIC PAGE CONTENT ==================== */
-/* HOME PAGE */
+/* GLOBAL HEADING / HOME PAGE */
 .heading-text, .sub-heading {
     text-align: center;
+}
+.sub-heading {
+    margin: 5px 0px;
 }
 .home-img {
     border-radius: 5%;
     width: 90%;
+    margin: 40px 10px;
 }
 @media (min-width: 480px){
     .home-img {
