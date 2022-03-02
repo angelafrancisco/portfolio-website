@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-**February 2022. Week 3, first individual project for General Assembly.**
+**Week 3 - February 2022. First individual project for General Assembly.**
 
 A personal website displaying my school projects and my personal interests/background.
 
