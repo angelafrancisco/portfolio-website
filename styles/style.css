@@ -250,14 +250,33 @@ footer {
     width: 100%;
     border-radius: 5%;
 }
-.grid-box:hover .grid-img {
+@media (min-width: 480px){
+    .grid-box:hover .grid-img {
     filter: blur(6px);
+    }
 }
 .grid-modal {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 5%;
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+    font-size: 0.8rem;
     position: absolute;
-    top: 55px;
-    left: 55px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media(min-width: 480px){
+    .grid-modal {
+        display: none;
+    }
 }
 .grid-modal h3, p {
     margin: 5px;
