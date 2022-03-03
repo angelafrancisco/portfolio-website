@@ -1,23 +1,27 @@
 # Personal Portfolio Website
+
 **Week 3 - February 2022. First individual project for General Assembly.**
 
 A personal website displaying my school projects and my personal interests/background.
 
 
 ## Website Link
+
 Hosted on GitHub Pages:
 
 https://angelafrancisco.github.io/portfolio/index.html
 
 
 ## Technology Used
+
 - HTML/CSS
 - Responsive Design
 - JavaScript/jQuery
-- GitHub
+- Git/GitHub
 
 
-## Credit
+## Credits
+
 - Icons made by: [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/).
 - Emoji resource: [iEmoji.com](http://www.iemoji.com/)
 - Homepage image photo by [Sincerely Media](https://unsplash.com/@sincerelymedia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/pink-coffee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -28,6 +32,7 @@ https://angelafrancisco.github.io/portfolio/index.html
 
 
 ## Project Requirements
+
 1. Built with HTML, CSS, JavaScript and jQuery.
 1. Hosted on Netlify or GitHub Pages.
 1. Commits to GitHub every day.
