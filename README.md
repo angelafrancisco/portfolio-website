@@ -7,7 +7,7 @@ A personal website displaying my school projects and my personal interests/backg
 
 ## Website Link
 
-Hosted via GitHub Pages: [angelafrancisco.com](http://angelafrancisco.com/index.html)
+Hosted via GitHub Pages: [angelafrancisco.com](https://angelafrancisco.com/index.html)
 
 
 ## Technology Used
