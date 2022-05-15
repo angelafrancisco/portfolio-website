@@ -320,7 +320,7 @@ span {
 }
 .contact-link {
     font-style: italic;
-    padding: 0;
+    padding-bottom: 15px;
 }
 .contact-link:hover {
     background-color: #ffffff;
