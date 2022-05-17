@@ -227,6 +227,8 @@ footer {
 }
 .job-info {
     font-style: italic;
+}
+.job-info, .skills-list {
     font-size: 14px;
 }
 /* PROJECT PAGE */
