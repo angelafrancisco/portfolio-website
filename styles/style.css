@@ -171,6 +171,9 @@ footer {
     margin: 0;
     padding: 10px;
 }
+.copywrite {
+    font-size: 1rem;
+}
 /* ==================== SPECIFIC PAGE CONTENT ==================== */
 /* GLOBAL HEADING / HOME PAGE */
 .heading-text, .sub-heading {
