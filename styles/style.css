@@ -22,6 +22,7 @@ a {
     align-items: center;
     border-bottom: 1px solid #88ced3;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 @media (min-width: 480px) {
     .nav-header {
