@@ -147,6 +147,12 @@ section {
     margin: 0;
     list-style-type: none;
 }
+.contact-info-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
 /* FOOTER */
 footer {
     background-color: #aafaff;
