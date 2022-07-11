@@ -1,10 +1,10 @@
 // console.log(`I AM LINKED`);
 // JQUERY SCRIPT //
 $(() => {
-    // 1. mobile hamburger click animation to open hidden menu //
+// 1. mobile hamburger click animation to open hidden menu //
     $('.nav-hamburger-container').click(() => {
         // console.log(`MENU IS CLICKED`);
-        // animation on hamburger divs into X
+        // animation on hamburger into X
         $('.nav-hamburger').toggleClass('move');
         // check element for .open class
         const $menuOpen = $('.nav-link-list').hasClass('open');
@@ -24,9 +24,10 @@ $(() => {
             $('.nav-link-list').appendTo('.menu-block');
         }
     });
-    // 2. on current page, show a border-bottom on active link //
-    // this code ended up much shorter than my original attempts as I was using each to target the wrong element
-    // use each to go through each li (aim is to match id to pathname)
+
+// 2. on current page, show a border-bottom on active link //
+// this code ended up much shorter than my original attempts as I was using each to target the wrong element
+// use each to go through each li (aim is to match id to pathname)
     $('.nav-menu-link').each(function () {
         // console.log(this.id);
         // create array for all pages
@@ -40,7 +41,8 @@ $(() => {
             $(this).addClass('active');
         }
     });
-    // 3. for each project div, hover over img and display hidden modal //
+
+// 3. for each project div, hover over img and display hidden modal //
     $('.grid-box').each(function () {
         $(this).hover(function () {
             console.log($(this));
@@ -50,7 +52,4 @@ $(() => {
             $(this).find('.grid-modal').removeClass('show');
         });
     });
-
-
-
 });
