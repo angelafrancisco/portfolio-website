@@ -327,11 +327,14 @@ footer {
 span {
     font-weight: 700;
 }
-.contact-link {
+.contact-link, .resume-link {
     font-style: italic;
     padding-bottom: 15px;
 }
+.contact-link:hover, .resume-link:hover {
+    background-color: #aafaff;
+}
+
 .contact-link:hover {
-    background-color: #ffffff;
     padding: 0px 5px;
 }
