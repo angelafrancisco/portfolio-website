@@ -331,10 +331,11 @@ span {
     font-style: italic;
     padding-bottom: 15px;
 }
-.contact-link:hover, .resume-link:hover {
+.contact-link:hover {
     background-color: #aafaff;
+    padding: 0px 5px;
 }
 
-.contact-link:hover {
-    padding: 0px 5px;
+.resume-link:hover {
+    background-color: #aafaff;
 }
