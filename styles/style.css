@@ -1,7 +1,7 @@
 /* ==================== GLOBAL STYLES ==================== */
 body {
     background-color: #ffffff;
-    /* background-color: rgb(255, 225, 230); */
+    background-color: rgb(255, 225, 230);
     color: #000000;
     margin: 0;
     font-family: 'Roboto Mono', monospace;
@@ -207,7 +207,7 @@ footer {
 }
 @media (min-width: 480px){
     .resume-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         align-items: flex-start;
     }
 }
@@ -322,7 +322,7 @@ span {
 }
 .contact-link, .resume-link {
     font-style: italic;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 .contact-link:hover, .resume-link:hover {
     background-color: #aafaff;
