@@ -150,10 +150,10 @@ section {
 }
 /* FOOTER */
 footer {
-    background-color: #aafaff;
+    background-color: rgb(255, 180, 195);
     text-align: center;
     width: 100%;
-    border-top: 1px solid #88ced3;
+/*     border-top: 1px solid #88ced3; */
     bottom: 0;
     position: absolute;
 }
