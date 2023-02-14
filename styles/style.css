@@ -18,10 +18,10 @@ a {
 /* NAVIGATION HEADER SECTION */
 .nav-header {
     display: flex;
-    background-color: #aafaff;
+    background-color: rgb(255, 180, 195);
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #88ced3;
+/*     border-bottom: 1px solid #88ced3; */
     flex-wrap: wrap;
     margin-bottom: 25px;
 }
